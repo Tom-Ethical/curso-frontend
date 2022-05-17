@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+	<!-- Informações para o navegador -->
+		<title>HTML - Layout</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-wdth, initial-scale-1">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+				background-color: #666;
+				padding: 30px;
+				text-align: center;
+				font-size: 35px;
+				color: white;
+			}
+
+			nav {
+				float: left;
+				width: 30%;
+				height: 300px;
+				background: #ccc;
+				padding: 20px;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			article {
+				float: left;
+				padding: 20px;
+				width: 70%;
+				background-color: #f1f1f1;
+				height: 300px;
+			}
+
+			section::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			footer {
+				background-color: #777;
+				padding: 10px;
+				text-align: center;
+				color: white;
+			}
+
+			@media (max-width: 600px) {
+				nav, article {
+					width: 100%;
+					height: auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sem quis metus scelerisque congue eu a urna. Integer vitae lobortis urna. Aliquam nec aliquet tortor. Nullam finibus tincidunt ligula non rutrum. Aliquam nec vulputate neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean interdum ipsum magna, eget lacinia leo elementum id. Suspendisse nisi arcu, blandit sit amet pellentesque ac, aliquet vitae erat. Phasellus gravida, velit eget tristique consectetur, lacus massa tempor lorem, a condimentum metus ligula non urna. Sed laoreet a eros at dapibus. Nullam risus lacus, hendrerit et laoreet nec, volutpat id ex. In vitae tristique turpis.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sem quis metus scelerisque congue eu a urna. Integer vitae lobortis urna. Aliquam nec aliquet tortor. Nullam finibus tincidunt ligula non rutrum. Aliquam nec vulputate neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean interdum ipsum magna, eget lacinia leo elementum id. Suspendisse nisi arcu, blandit sit amet pellentesque ac, aliquet vitae erat. Phasellus gravida, velit eget tristique consectetur, lacus massa tempor lorem, a condimentum metus ligula non urna. Sed laoreet a eros at dapibus. Nullam risus lacus, hendrerit et laoreet nec, volutpat id ex. In vitae tristique turpis.</p>
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Aluno</p>
+		</footer>
+	
+	</body>
+
+</html>
